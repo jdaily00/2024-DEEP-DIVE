@@ -1,0 +1,39 @@
+/* 온점(.)은 클래스 지칭 */
+
+/* transition: <property> <duration>
+   - 스타일 변경 시 부드럽게 전환 ex) 호버링할 때
+   - 선택자가 변화되는 것을 시간의 흐름을 줘서 변화시키는 속성
+   - transition: 0.20s도 가능
+   - transition: 속성 시간 속도 지연 시간;
+   - 호버할 때 백그라운드 색을 3초 사이에 서서히 검은색으로 전환함
+ */
+.a-button {
+  background-color: rgb(20, 40, 192);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
+  transition: opacity 1s, background-color 2s;
+  vertical-align: top;
+}
+
+/* Pseudo Classes
+     .a-button:hover => 이 스타일은 마우스를 class="a-button"인 요소에 가져갈 때(hover)만 적용됨
+     .a-button:active => 이 스타일은 class="a-button"인 요소를 클릭할 때만 적용됨
+  */
+.a-button:hover {
+  opacity: 0.7;
+  background-color: black;
+}
+
+.a-button:active {
+  opacity: 0.1;
+}
