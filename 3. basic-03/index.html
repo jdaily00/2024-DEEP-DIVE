@@ -1,0 +1,23 @@
+<!-- 1. 인라인 스타일
+     HTML 안에서 Style 속성을 이용 (인라인 스타일)
+     => 태그 안에 스타일 속성을 주고 속성값을 넣어주는 방법 -->
+<p style="font-size: 20px">안녕하세요.</p>
+
+<!-- 2. 내부 스타일 시트 
+     <style> 태그를 통해 HTML 문서 내부에서 이용 (내부 스타일 시트)
+     => <head> 태그 안에 <style> 태그를 넣어주고 타입으로 "text/css" 속성값을 주는 방법 -->
+<head>
+  <style type="text/css">
+    h1 {
+      color: blue;
+    }
+  </style>
+</head>
+
+<!-- 3. 외부 스타일 시트
+     별도로 CSS 파일을 분리하여 HTML의 문서에 연결 (외부 스타일 시트)
+     => 기존에 *.html 파일 말고도 *.css 파일을 생성해 .css 파일 내에서 스타일링을 하고 html에서 연결하는 방법
+     link라는 태그를 이용해 css 파일 이름을 넣어주면 *.html 파일이 해당 css 파일을 로드함 -->
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
