@@ -12,7 +12,7 @@
 
 .sidebar-link {
   height: 74px;
-  display: flex;
+  /* display: flex; */
   justify-items: center;
   flex-direction: column;
   cursor: pointer;
