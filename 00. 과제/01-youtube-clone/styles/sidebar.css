@@ -10,6 +10,7 @@ hr {
 .tap-group {
   position: fixed;
   flex-direction: row;
+  /* margin-top: 80px; */
 }
 
 .tap-button-click {

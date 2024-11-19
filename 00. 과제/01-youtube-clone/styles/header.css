@@ -1,11 +1,19 @@
 /* 최상위 헤더 */
 .header {
   display: flex;
-  position: ;
   flex-direction: row;
   margin-left: 20px;
   margin-right: 20px;
   justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #000000;
 }
 
 /* 좌측 */
@@ -20,7 +28,6 @@
   align-items: center;
 }
 .search {
-  /* flex: 1; */
   padding-left: 200px;
   height: 35px;
   border-radius: 20px 0 0 20px;
