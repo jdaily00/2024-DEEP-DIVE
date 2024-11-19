@@ -5,8 +5,8 @@
   flex-direction: row;
   justify-content: space-between;
 
-  position: fixed;
-  top: 0;
+  position: fixed; /* 위에 고정시키기 위함*/
+  top: 0; /*맨 위에 붙음 */
   left: 0;
   right: 0;
   z-index: 100;
@@ -30,9 +30,13 @@
 
 /* 중앙 */
 .middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
   margin-left: 70px;
   margin-right: 35px;
   max-width: 500px;
+  padding-top: 20px;
 }
 
 /* 아이콘 사이즈 */
@@ -69,11 +73,57 @@
   height: 24px;
 }
 
-.nofitications-icon {
+.notifications-icon {
   height: 24px;
 }
 
-.eurrent-user-picture {
+.current-user-picture {
   height: 32px;
   border-radius: 16px;
+}
+
+/* search bar */
+.search-bar {
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid #4d4d4d;
+  border-radius: 2px;
+  background-color: #121212;
+}
+
+.search-bar::placeholder {
+  font-size: 16px;
+}
+
+/* hover할 때만 툴팁이 보이도록 */
+.search-button,
+.voice-search-button,
+.upload-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip {
+  position: absolute;
+  background-color: gray;
+  bottom: -30px;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  white-space: nowrap; /* 한 줄로 만들기 */
+  color: #ffffff;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip {
+  opacity: 1;
 }
