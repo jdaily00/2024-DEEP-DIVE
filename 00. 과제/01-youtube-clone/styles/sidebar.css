@@ -1,0 +1,21 @@
+/* 사이드바 */
+hr {
+  position: fixed;
+  margin-left: 0;
+  margin-top: 160px;
+  width: 110px;
+  border-color: #ffffff;
+}
+
+.tap-group {
+  position: fixed;
+  flex-direction: row;
+}
+
+.tap-button-click {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  justify-items: center;
+}

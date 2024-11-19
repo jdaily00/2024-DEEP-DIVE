@@ -1,6 +1,7 @@
 /* 최상위 헤더 */
 .header {
   display: flex;
+  position: ;
   flex-direction: row;
   margin-left: 20px;
   margin-right: 20px;
