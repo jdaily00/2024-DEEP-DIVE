@@ -1,11 +1,18 @@
 .menu {
+  top: 0;
   width: 35px;
 }
 
 .youtubeLogo {
+  top: 0;
   width: 130px;
 }
 
 .searchImage {
+  width: 30px;
+  padding-left: 15px;
+}
+
+.bell-icon {
   width: 30px;
 }
