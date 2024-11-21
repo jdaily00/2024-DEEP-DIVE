@@ -15,7 +15,6 @@ body {
   -moz-user-select: none; /* Mozilla 기반 브라우저 */
   -ms-use-select: none;
   user-select: none;
-  font-size: 10px;
 }
 
 /* 이미지 */

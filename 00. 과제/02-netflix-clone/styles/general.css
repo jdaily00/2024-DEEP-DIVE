@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #000000;
+}
+
+body {
+  display: flex;
+  font-size: 16.5%;
+  color: #ffffff;
+  -webkit-user-select: none; /* WebKit 기반 브라우저 */
+  -moz-user-select: none; /* Mozilla 기반 브라우저 */
+  -ms-use-select: none;
+  user-select: none;
+}
