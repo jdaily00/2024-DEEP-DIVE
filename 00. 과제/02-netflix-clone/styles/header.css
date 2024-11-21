@@ -1,3 +1,49 @@
 .header-container {
   display: flex;
+  width: 201vh;
+  height: 1.5rem;
+  padding: 1.5rem;
+}
+
+.header-left {
+  width: 6.6rem;
+  height: 2rem;
+}
+
+.header-center {
+  margin-left: 3rem;
+  font-size: 0.9rem;
+}
+
+.header-center > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.header-center > ul > li:nth-child(7) {
+  color: pink;
+}
+
+.header-center .navigation > li ::hover {
+  color: aqua;
+}
+
+.header-right {
+  display: flex;
+  width: 8rem;
+  height: 2rem;
+  margin-left: 40rem;
+  padding-left: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* 텍스트 가로로 정렬 수정할 것 */
+.header-right > span {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  align-items: center;
 }
