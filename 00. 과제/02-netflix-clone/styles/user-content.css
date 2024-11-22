@@ -3,19 +3,29 @@
   flex-direction: column;
 }
 
-/* .user-content-container-1 .korea-drama-text > h3 {
+h3 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
   display: flex;
-  z-index: 1;
-} */
+  z-index: 2;
+}
 
-/* .korea-drama {
+.korea-drama {
+  display: flex;
   margin-left: 5rem;
   margin-top: 45rem;
   gap: 1rem;
-} */
+}
 
 .korea-drama > ul {
   display: flex;
   list-style-type: none;
-  gap: 1rem;
+}
+
+.content-container-2,
+.content-container-3 {
+  display: flex;
+  width: 100%;
+  height: 15rem;
 }
