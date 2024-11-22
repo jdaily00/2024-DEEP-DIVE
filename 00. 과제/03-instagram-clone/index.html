@@ -7,7 +7,8 @@
       name="description"
       content="An Instagram clone built with responsive design using HTML and CSS."
     />
-    <title>instagram clone</title>
+    <title>Instagram clone</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
@@ -136,6 +137,62 @@
             />
             <p class="user-name">User11</p>
           </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User12</p>
+          </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User13</p>
+          </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User14</p>
+          </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User15</p>
+          </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User16</p>
+          </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User17</p>
+          </section>
+          <section class="story-item">
+            <img
+              class="story-profile"
+              src="assets/images/avatar.png"
+              alt="스토리 프로필"
+            />
+            <p class="user-name">User18</p>
+          </section>
         </section>
         <section class="main-content-posts">
           <div class="user-post-profile"></div>
@@ -143,20 +200,26 @@
       </main>
       <div class="post-container">
         <section class="user-post-profile">
-          <img class="user-profile-picture" src="assets/images/avatar.png" />
-          <span>경희</span>
+          <section class="user-info-container">
+            <img class="user-profile-picture" src="assets/images/avatar.png" />
+            <span>경희</span>
+          </section>
           <img class="post-memu-img" src="assets/images/menu-image.svg" />
         </section>
         <section class="user-post">
           <img class="post-image" src="assets/images/picture.jpeg" />
           <section class="post-info">
-            <img class="heart-img" src="assets/icons/heart.svg" />
-            <img class="message" src="assets/icons/messenger.svg" />
-            <img class="bookmark-img" src="assets/icons/bookmark.svg" />
-            <p><b>Liked by user1 and 33 other</b></p>
-            <p>user description</p>
-            <br />
-            <p>3 MINUTES AGO</p>
+            <div class="icon-group">
+              <img class="heart-img" src="assets/icons/heart.svg" />
+              <img class="message" src="assets/icons/messenger.svg" />
+              <img class="bookmark-img" src="assets/icons/bookmark.svg" />
+            </div>
+            <div class="text-group">
+              <p><b>Liked by user1 and 33 other</b></p>
+              <p>user description</p>
+              <br />
+              <p>3 MINUTES AGO</p>
+            </div>
           </section>
         </section>
       </div>
