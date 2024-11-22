@@ -10,9 +10,9 @@
   padding: 0;
 }
 
-body {
-  -webkit-user-select: none; /* WebKit 기반 브라우저 */
-  -moz-user-select: none; /* Mozilla 기반 브라우저 */
+.body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
   -ms-use-select: none;
   user-select: none;
 }
