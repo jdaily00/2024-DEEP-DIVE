@@ -1,0 +1,21 @@
+.user-content-container-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .user-content-container-1 .korea-drama-text > h3 {
+  display: flex;
+  z-index: 1;
+} */
+
+/* .korea-drama {
+  margin-left: 5rem;
+  margin-top: 45rem;
+  gap: 1rem;
+} */
+
+.korea-drama > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
