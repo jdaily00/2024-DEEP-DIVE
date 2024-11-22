@@ -27,6 +27,7 @@
   background-size: cover;
   /* position: absolute; */
   z-index: 2;
+  list-style-type: none;
 }
 .movie-2 {
   background-image: url(https://occ-0-3076-988.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABdJj6lWG6C7Y2n0MHbbBtmXIgaWmGI_IDUlJsRKqfPAfj5odhVgx_8LuXjpaxD4ILG6EjyI-KsOwYjClwA3N0oSVNqr-W0VhDTHN9eZ_GHJNQny-2NxblwGr9uFPl0uXvCmxnxtTHKJp32qzyFENd4etFc7sp3C612De91PWOKDDbMdenMYsjBAkTXWp-AKEDLX2x2Q1a3hHz_6JihsFEu6kCXohOfhvyOZ7TqUbEanlBuTny3yh8b8olLoT-WAwTupXBGejG-tPGtAo2FYj7PX6iNUMPGFTn3U9uF3F4CbM2Gt4FKd8J0h4k-L-_-6Ga3X8QvJ0BQUqrAZzrA_Aurryoy02vFfXLEsvD7jRCwFAAquzTA.jpg?r=57);
