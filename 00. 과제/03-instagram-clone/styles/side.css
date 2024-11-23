@@ -1,0 +1,16 @@
+.side-container {
+  /* background-color: aqua; */
+  width: 25%;
+  height: 100vh;
+  margin-top: 5rem;
+}
+
+.user-content-container {
+  display: flex;
+  gap: 4rem;
+}
+
+/* image-size */
+.user-profile-change-img {
+  width: 3.5rem;
+}
