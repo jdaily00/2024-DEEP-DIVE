@@ -1,6 +1,7 @@
 .movie-1 {
   /* background-image: url(https://occ-0-3076-988.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABW1kzcWOY3GvfSJSrqA1ai7uBbOwULoYRsJgIrxvhPvCvw3Mzfq-Wi_HMwIp3JtHaY_IOCuG0bfPDqL5LjT0r3hfxJSCvt5IL7Bs.webp?r=a9); */
-  background-image: url(../assets/images/main-picture.png);
+  /* background-image: url(../assets/images/main-picture.png); */
+  background-image: url(https://occ-0-3076-988.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABZ7jKPACWNOUEobAjVLXcxt7c7ejC0ln1G2u7S76WHjsA2hLquYFDeViUg1-xlRPKHAUfNoiXv-M60vycmfuAyW4jHOnNlTdp2Wx.webp?r=c32);
   width: 100%;
   height: 100vh;
   background-size: cover;
