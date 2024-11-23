@@ -42,19 +42,9 @@
 .header-right {
   display: flex;
   margin-left: auto;
-  width: 8rem;
+  width: 9.5rem;
   height: 2rem;
-  /* margin-left: 40rem; */
-  padding-left: 1rem;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-
-/* 텍스트 가로로 정렬 수정할 것 */
-.header-right > span {
-  display: flex;
-  width: auto;
-  justify-content: center;
-  align-items: center;
+  gap: 0.5rem;
 }
