@@ -1,44 +1,52 @@
+.main-content-container {
+  display: flex;
+  width: 100%;
+  margin-top: 3rem;
+  position: relative;
+}
+
 .sub-header-container {
   display: flex;
+  /* position: fixed; */
+  width: 100%;
+  background-color: #000000;
+  /* z-index: 2; */
+}
+
+.text-icon-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 4.5rem;
-  position: relative;
-  z-index: 2;
+  margin-top: 3rem;
+  position: absolute;
 }
 
 .text-container {
   position: absolute;
+  font-size: 2.3rem;
+  width: 17rem;
   z-index: 1;
 }
 
 .menu-container {
   display: flex;
-  position: absolute;
-  top: 1rem;
-  right: 5rem;
-  display: flex;
-  gap: 0.5rem;
+  margin-left: auto;
+  width: 6rem;
   z-index: 1;
-}
-
-.text-container > h1 {
-  font-size: 2.3rem;
-  width: 17rem;
-  margin-top: 0.5rem;
-  margin-left: 4rem;
 }
 
 .movie-info-container {
   display: flex;
-  gap: 1rem;
-  position: relative;
-  width: 5rem;
-  height: 2rem;
+  width: 100%;
+  margin-top: 1.2rem;
+  margin-left: 3rem;
+  gap: 1.2rem;
 }
 
 .play-btn,
 .movie-info-btn {
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
   width: 8.5rem;
   height: 3rem;
@@ -47,11 +55,9 @@
   border-radius: 0.3rem;
   font-weight: 500;
   margin-top: 38rem;
-  margin-left: 5rem;
 }
 
 .movie-info-btn {
-  margin-left: 15rem;
   background-color: gray;
   opacity: 100%;
   color: #ffffff;
