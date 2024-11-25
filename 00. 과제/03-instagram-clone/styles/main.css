@@ -191,3 +191,121 @@
     font-size: 0.7rem;
   }
 }
+
+/* 1200px 이상: 데스크톱(대화면) */
+@media (min-width: 1200px) {
+  .user-content-container {
+    width: 104%;
+  }
+
+  .post-container {
+    margin-bottom: 4rem;
+  }
+
+  .user-profile-picture {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .text-group {
+    font-size: 1rem;
+  }
+
+  .icon-group {
+    margin-top: 1rem;
+  }
+}
+
+/* 992px ~ 1199px: 태블릿 가로 모드 */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .user-content-container {
+    width: 95%;
+  }
+
+  .post-container {
+    margin-bottom: 2.5rem;
+  }
+
+  .user-profile-picture {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .icon-group {
+    margin-top: 0.5rem;
+  }
+}
+
+/* 768px ~ 991px: 태블릿 세로 모드 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .user-content-container {
+    width: 90%;
+    margin-right: 40rem;
+  }
+
+  .post-container {
+    margin-bottom: 2rem;
+  }
+
+  .user-profile-picture {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .text-group {
+    font-size: 0.85rem;
+  }
+}
+
+/* 576px ~ 767px: 작은 태블릿 및 대형 스마트폰 */
+@media (min-width: 576px) and (max-width: 767px) {
+  .user-content-container {
+    width: 90%;
+  }
+
+  .post-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .user-profile-picture {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .post-image {
+    border-radius: 4px;
+  }
+
+  .text-group {
+    font-size: 0.8rem;
+  }
+}
+
+/* 575px 이하: 모바일(소형 화면) */
+@media (max-width: 575px) {
+  .user-content-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .post-container {
+    margin-bottom: 1rem;
+  }
+
+  .user-profile-picture {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .post-image {
+    border-radius: 2px;
+  }
+
+  .icon-group {
+    gap: 0.5rem;
+  }
+
+  .text-group {
+    font-size: 0.75rem;
+  }
+}
