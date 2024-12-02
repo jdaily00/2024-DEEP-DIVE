@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>github finder app</title>
+    <title>Github Finder Clone</title>
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <script src="main.js"></script>
+    <header class="header-container">
+      <a href="#" id="headbar">GitHub Finder</a>
+    </header>
+    <section id="text-container">
+      <div>
+        <h1 class="title">Search Github Users</h1>
+        <p class="description">
+          Enter a username to fetch user profile and repos
+        </p>
+        <input type="text" id="user-search" placeholder="GitHub username" />
+        <button id="search-btn">검색</button>
+      </div>
+    </section>
+    <section id="profile-container-1">
+      <div id="profile-1"></div>
+    </section>
+    <section id="profile-container-2">
+      <div id="profile-2"></div>
+    </section>
+    <script src="script.js" defer></script>
   </body>
 </html>
