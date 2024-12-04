@@ -1,0 +1,46 @@
+.content-group-container {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 13.5rem;
+    width: 58%;
+    height: 60vh;
+    /* background-color: aqua; */
+}
+
+.user-profile-container {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-container .user-profile-picture {
+    width: 4.5rem;
+    border-radius: 5rem;
+}
+
+.user-profile-container .text-group > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.todo-add {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.todo-add .todo-text {
+    width: 20rem;
+    height: 2rem;
+    border-color: gray;
+    border-radius: 0.5rem;
+}
+
+.todo-add .todo-text::placeholder {
+    padding-left: 1rem;
+}

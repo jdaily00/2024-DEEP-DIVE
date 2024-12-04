@@ -1,0 +1,21 @@
+.friend-list-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    margin-top: 2rem;
+}
+
+.friend-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.friend-list .friend-list-image {
+    width: 4rem;
+}
+
+.friend-list > p {
+    font-size: 1rem;
+    padding: 0 0.6rem;
+}
