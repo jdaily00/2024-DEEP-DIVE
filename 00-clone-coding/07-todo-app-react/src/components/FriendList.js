@@ -16,8 +16,8 @@ function FriendList() {
     return (
         <div className="friend-list-container">
             {friends.map((friend, index) => (
-                <section className="friendlist" key={index}>
-                    <img className="friend-list-image" src="public/assets/images/avatar.png" alt="avatar"/>
+                <section className="friend-list" key={index}>
+                    <img className="friend-list-image" src="/assets/images/avatar.png" alt="avatar"/>
                     <p>{friend}</p>
                 </section>
             ))}
