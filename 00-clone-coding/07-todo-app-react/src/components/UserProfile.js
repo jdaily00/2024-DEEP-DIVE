@@ -6,7 +6,7 @@ function UserProfile() {
         <section className="user-profile-container">
             <img
                 className="user-profile-picture"
-                src="../assets/images/profile-img.jpg"
+                src="assets/images/profile-img.jpg"
                 alt="profile"
             />
             <div className="text-group">
