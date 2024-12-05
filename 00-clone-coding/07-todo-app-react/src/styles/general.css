@@ -11,17 +11,22 @@ body {
     -moz-user-select: none;
     -ms-use-select: none;
     user-select: none;
+    box-sizing: border-box;
 }
+
 
 .general-container {
-    width: 100%;
+    width: 116.5%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1aa1b8;
 }
-
 .layout-container {
     width: 60%;
     height: 100vh;
     margin: 0 21rem;
     box-sizing: border-box;
-    /* background-color: khaki; */
+    background-color: #01b974;
 }
