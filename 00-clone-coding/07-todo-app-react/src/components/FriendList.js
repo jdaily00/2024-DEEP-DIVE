@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/friendList.css";
-import "../assets/images/avatar.png";
 
 const friends = [
     "조유빈",
@@ -18,7 +17,7 @@ function FriendList() {
         <div className="friend-list-container">
             {friends.map((friend, index) => (
                 <section className="friendlist" key={index}>
-                    <img className="friend-list-image" src="../../public/assets/images/avatar.png" alt="avatar" />
+                    <img className="friend-list-image" src="public/assets/images/avatar.png" alt="avatar"/>
                     <p>{friend}</p>
                 </section>
             ))}
