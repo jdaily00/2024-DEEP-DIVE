@@ -13,12 +13,10 @@ function TodoContent() {
                 // 새로운 할 일을 추가
                 setTodos([...todos, inputValue]);
                 setInputValue("");
-                // setTodos([...todos, inputValue]);
-                // setInputValue("");
             }
         }
-        ;
     }
+
     const deleteTodo = (index) => {
         setTodos(todos.filter((_, i) => i !== index));
     };
@@ -29,6 +27,7 @@ function TodoContent() {
                 i === index ? {...todo, completed: !todo.completed} : todo
             )
         );
+        console.log(setTodos);
     };
 
 
@@ -46,8 +45,9 @@ function TodoContent() {
             </section>
             <div className="todo-list" id="list">
                 {todos.map((todo, index) => (
+                    // console.log();
                     <div className="item" key={index}>
-                        <input
+                        <input className="checkbox"
                             type="checkbox"
                             checked={todo.completed}
                             onChange={() => toggleComplete(index)}
@@ -60,10 +60,10 @@ function TodoContent() {
                         >
                             {todo.text}
                         </span>
-                        <input type="text" value={todo} disabled/>
+                        <input className="textbox" type="text" value={todo} disabled/>
                         {/*<input type="checkbox"/>*/}
 
-                        <div className="actions">
+                        <div className="delete-btn">
                             <button onClick={() => deleteTodo(index)}>삭제</button>
                         </div>
                     </div>
