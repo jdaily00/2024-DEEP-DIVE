@@ -7,11 +7,13 @@ function TodoContent() {
 
     const addTodo = (e) => {
         if (e.key === "Enter" && inputValue.trim()) {
-            if (todos.includes(inputValue)) {
+            if (todos.some((todo) => todo.text === inputValue)) {
+            // if (todos.includes(inputValue)) {
                 alert("이미 추가된 할 일입니다.");
             } else {
                 // 새로운 할 일을 추가
-                setTodos([...todos, inputValue]);
+                // setTodos([...todos, inputValue]);
+                setTodos([...todos, { text: inputValue, completed: false }]);
                 setInputValue("");
             }
         }
@@ -30,7 +32,6 @@ function TodoContent() {
         console.log(setTodos);
     };
 
-
     return (
         <section className="todo-container">
             <section className="todo-add">
@@ -44,33 +45,39 @@ function TodoContent() {
                 />
             </section>
             <div className="todo-list" id="list">
-                {todos.map((todo, index) => (
-                    // console.log();
-                    <div className="item" key={index}>
-                        <input className="checkbox"
-                            type="checkbox"
-                            checked={todo.completed}
-                            onChange={() => toggleComplete(index)}
-                        />
-                        <span
-                            style={{
-                                textDecoration: todo.completed ? "line-through" : "none",
-                                color: todo.completed ? "gray" : "black",
-                            }}
-                        >
-                            {todo.text}
-                        </span>
-                        <input className="textbox" type="text" value={todo} disabled/>
-                        {/*<input type="checkbox"/>*/}
+                {todos.map((todo, index) => {
+                    console.log("todo", todo); // console.log를 JSX 외부로 이동
+                    return (
+                        <div className="item" key={index}>
+                            <input
+                                className="checkbox"
+                                type="checkbox"
+                                checked={todo.completed}
+                                onChange={() => toggleComplete(index)}
+                            />
+                            <span
+                                className={
+                                    todo.completed ? "todo-completed" : "todo-notcompleted"
+                                }
+                            >
 
-                        <div className="delete-btn">
-                            <button onClick={() => deleteTodo(index)}>삭제</button>
+                        </span>
+                            <input
+                                className="textbox"
+                                type="text"
+                                value={todo.text} // todo는 객체이므로 text 속성에 접근
+                                disabled
+                            />
+                            <div className="delete-btn">
+                                <button onClick={() => deleteTodo(index)}>삭제</button>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </section>
     );
+
 }
 
 export default TodoContent;
