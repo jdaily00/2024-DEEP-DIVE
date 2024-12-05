@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     margin: 3rem 13.5rem;
-    width: 58%;
+    width: 55%;
     height: 60vh;
-    /* background-color: aqua; */
 }
 
 .user-profile-container {
@@ -13,7 +12,8 @@
 }
 
 .user-profile-container .user-profile-picture {
-    width: 4.5rem;
+    margin-left: 1.7rem;
+    width: 4rem;
     border-radius: 5rem;
 }
 
@@ -26,21 +26,70 @@
 .todo-container {
     display: flex;
     flex-direction: column;
+    height: 50vh;
 }
 
 .todo-add {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 3rem;
     justify-content: center;
 }
 
 .todo-add .todo-text {
-    width: 20rem;
-    height: 2rem;
-    border-color: gray;
+    width: 22rem;
+    height: 2.5rem;
+    border-color: #4582eb;
     border-radius: 0.5rem;
 }
 
 .todo-add .todo-text::placeholder {
     padding-left: 1rem;
+}
+
+/* todo list */
+.todo-list {
+    margin-top: 1rem;
+    margin-left: 7rem;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 60%;
+}
+
+.todo-list::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    margin-bottom: 0.8rem;
+}
+
+.checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    appearance: none; /* 브라우저 기본 체크박스 스타일 제거 */
+    -webkit-appearance: none; /* 크로스 브라우저 호환성 */
+    border: 0.1rem solid #333333;
+    border-radius: 0.2rem;
+    background-color: white;
+}
+
+.textbox {
+    font-size: 1rem;
+    border: none;
+    background-color: #ffffff;
+    padding-left: 1rem;
+}
+
+.delete-btn button {
+    width: 3rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 0.2rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
 }
