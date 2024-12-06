@@ -29,6 +29,19 @@
     height: 50vh;
 }
 
+.textbox {
+    color: black; /* 기본 텍스트 색상 */
+    text-decoration: none; /* 기본적으로 줄 없음 */
+    margin-left: 0.5rem; /* 텍스트와 체크박스 간격 */
+    font-size: 1rem;
+}
+
+/* 체크박스에 체크되었을 때 텍스트 스타일 */
+.checkbox:checked + .textbox {
+    color: #a9a9a9; /* 텍스트 색상을 회색으로 변경 */
+    text-decoration: line-through; /* 중앙에 줄 긋기 */
+}
+
 .todo-add {
     display: flex;
     margin-top: 3rem;
@@ -44,6 +57,12 @@
 
 .todo-add .todo-text::placeholder {
     padding-left: 1rem;
+}
+
+input:focus {
+    outline: none;
+    /*border: 2px solid #4CAF50;*/
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
 }
 
 /* todo list */
@@ -76,6 +95,22 @@
     border: 0.1rem solid #333333;
     border-radius: 0.2rem;
     background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem; /* ✔ 크기 설정 */
+}
+
+.checkbox:checked {
+    background-color: #4582eb;
+    color: white;
+}
+
+.checkbox:checked::before {
+    content: "✔";
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .textbox {
