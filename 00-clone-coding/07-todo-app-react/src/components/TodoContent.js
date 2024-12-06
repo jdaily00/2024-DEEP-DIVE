@@ -63,7 +63,7 @@ function TodoContent() {
                                 // onChange={() => toggleComplete(index)}
                                 onChange={() => {
                                     const updatedTodos = todos.map((t, i) =>
-                                        i === index ? { ...t, completed: !t.completed } : t
+                                        i === index ? {...t, completed: !t.completed} : t
                                     );
                                     setTodos(updatedTodos);
                                     localStorage.setItem("todos", JSON.stringify(updatedTodos));
@@ -74,8 +74,8 @@ function TodoContent() {
                                     todo.completed ? "todo-completed" : "todo-notcompleted"
                                 }
                             >
-
-                        </span>
+                                {/*{todo.completed ? "✔" : ""}*/}
+                            </span>
                             <input
                                 className="textbox"
                                 type="text"
