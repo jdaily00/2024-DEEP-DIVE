@@ -1,20 +1,27 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import "../styles/content.css";
 
 function TodoContent() {
-    const [todos, setTodos] = useState([]);
+    const [todos, setTodos] = useState(() => {
+        const storedTodos = localStorage.getItem("todos");
+        return storedTodos ? JSON.parse(storedTodos) : [];
+    });
+    // const [todos, setTodos] = useState([]);
     const [inputValue, setInputValue] = useState("");
 
     const addTodo = (e) => {
         if (e.key === "Enter" && inputValue.trim()) {
             if (todos.some((todo) => todo.text === inputValue)) {
-            // if (todos.includes(inputValue)) {
+                // if (todos.includes(inputValue)) {
                 alert("이미 추가된 할 일입니다.");
             } else {
-                // 새로운 할 일을 추가
                 // setTodos([...todos, inputValue]);
-                setTodos([...todos, { text: inputValue, completed: false }]);
+                // setTodos([...todos, { text: inputValue, completed: false }]);
+                const newTodos = ([...todos, {text: inputValue, completed: false}]);
+                setTodos(newTodos);
                 setInputValue("");
+                // localStorage.setItem("todo". JSON.stringify(inputValue));
+                localStorage.setItem("todos", JSON.stringify(newTodos));
             }
         }
     }
@@ -53,7 +60,14 @@ function TodoContent() {
                                 className="checkbox"
                                 type="checkbox"
                                 checked={todo.completed}
-                                onChange={() => toggleComplete(index)}
+                                // onChange={() => toggleComplete(index)}
+                                onChange={() => {
+                                    const updatedTodos = todos.map((t, i) =>
+                                        i === index ? { ...t, completed: !t.completed } : t
+                                    );
+                                    setTodos(updatedTodos);
+                                    localStorage.setItem("todos", JSON.stringify(updatedTodos));
+                                }}
                             />
                             <span
                                 className={
@@ -69,7 +83,16 @@ function TodoContent() {
                                 disabled
                             />
                             <div className="delete-btn">
-                                <button onClick={() => deleteTodo(index)}>삭제</button>
+                                {/*<button onClick={() => deleteTodo(index)}>삭제</button>*/}
+                                <button
+                                    onClick={() => {
+                                        const updatedTodos = todos.filter((_, i) => i !== index);
+                                        setTodos(updatedTodos);
+                                        localStorage.setItem("todos", JSON.stringify(updatedTodos));
+                                    }}
+                                >
+                                    삭제
+                                </button>
                             </div>
                         </div>
                     );
